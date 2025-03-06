@@ -1,0 +1,207 @@
+/* Global styles */
+
+  /* Container */
+  .productPage {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .productTitle {
+    text-align: center;
+    color: #2a9d8f;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  /* Description */
+  .productDescription p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Key Features */
+  .keyFeatures {
+    background-color: #f0f8f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .keyFeatures h2 {
+    color: #264653;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .keyFeatures ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .keyFeatures li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .keyFeatures li:before {
+    content: "✔";
+    margin-right: 8px;
+    color: #2a9d8f;
+  }
+  
+  /* How to Use */
+  .howToUse {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f0f8f1;
+    margin-bottom: 20px;
+  }
+  
+  .howToUse h2 {
+    color: #264653;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .howToUse ol {
+    padding-left: 20px;
+  }
+  
+  .howToUse li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 12px;
+  }
+  
+  /* Ingredients Section */
+  .ingredients {
+    margin-bottom: 20px;
+  }
+  
+  .ingredients h2 {
+    color: #264653;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .ingredients ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  .ingredients li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  /* Pricing */
+  .pricing {
+    background-color: #f0f8f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .pricing h2 {
+    color: #264653;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .pricing ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .pricing li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 12px;
+  }
+  
+  /* Customer Reviews */
+  .customerReviews {
+    background-color: #f0f8f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .customerReviews h2 {
+    color: #264653;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .review {
+    border-left: 3px solid #2a9d8f;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    font-style: italic;
+  }
+  
+  .review p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .review strong {
+    color: #2a9d8f;
+  }
+  
+  .review:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Order Now */
+  .orderNow {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .orderNow h2 {
+    font-size: 1.8rem;
+    color: #264653;
+  }
+  
+  .orderNow p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .orderLink {
+    color: #e76f51;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .orderLink:hover {
+    text-decoration: underline;
+    color: #2a9d8f;
+  }
+  
+  /* Hover Effects */
+  section:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  h2 {
+    font-weight: 600;
+  }
+  

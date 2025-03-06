@@ -60,6 +60,43 @@ export const Home = () => {
           </div>
         </Slider>
       </section>
+
+      {/* Content Sections */}
+      <div className={styles.container}>
+        <header className={styles.header}>
+          <h1>Welcome to SR EXIM
+          Connecting international Markets</h1>
+        </header>
+
+        <section className={styles.intro}>
+          <p>
+        <strong>SR EXIM Connecting international Markets </strong>  was newly found in the year 2024, we have been able to efficiently satisfy the requirements for various food-based goods since they are needed practically everywhere. We have constantly been a reputable supplier, trader, and exporter of a wide range of food items.
+          </p>
+        </section>
+
+        <section className={styles.products}>
+          <h2>Our Products</h2>
+          <p>
+          <strong>SR EXIM Connecting international Markets </strong>  Overseas is a Prominent & Leading Merchant Manufacturer, Supplier, and Trader of all types of Authentic Agro-products like:
+          </p>
+          <ul>
+            <li>Indian Rice (Basmati & Non-Basmati)</li>
+            <li>Bitter Gourd</li>
+            <li>coconuts</li>
+            <li>Drumstics</li>
+            <li>Eggs</li>
+            <li>Green chilli</li>
+            <li>Garlic,Ginger,mirchi,onion,pumpkin,spices  etc., which are completely Pesticides Free.</li>
+          </ul>
+        </section>
+
+        <section className={styles.mission}>
+          <h2>Our Mission</h2>
+          <p>
+            As one of the innovation-driven businesses,  <strong>SR EXIM Connecting international Markets </strong>  Overseas aims to deliver its products and services that significantly improve people’s lives by supplying them the Best Quality Products.
+          </p>
+        </section>
+      </div>
     </div>
   );
 };

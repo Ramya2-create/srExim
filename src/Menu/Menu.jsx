@@ -49,7 +49,6 @@ export const Menu = () => {
           )}
         </li>
 
-        <li><Link to="/certifications" onClick={() => setIsMenuOpen(false)}>Certifications</Link></li>
         <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
       </ul>
     </nav>

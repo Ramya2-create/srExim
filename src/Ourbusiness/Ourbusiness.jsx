@@ -13,7 +13,7 @@ export const Ourbusiness = () => {
       
       <p className={styles.description}>
         Our products, before supplying, are well-tested and certified by <strong>Quality Research 
-        Organizations</strong> and have also been <strong>Approved by the Food Safety and Standards Authority of India (FSSAI)</strong>.
+     Organizations</strong>     {/*and have also been <strong>Approved by the Food Safety and Standards Authority of India (FSSAI)</strong>. */}
       </p>
 
       <h3 className={styles.subheading}>Our Commitment</h3>

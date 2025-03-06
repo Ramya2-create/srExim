@@ -4,7 +4,7 @@ import styles from "./About.module.css";
 export const About = () => {
   return (
     <div className={styles.aboutContainer}>
-      <h2>About Us</h2>
+      <h2 className={styles.heading}>About Us</h2>
       <p>
         We at <strong>SR EXIM Connecting international Markets</strong> have been
         researching the steadily rising need for various types of food products in

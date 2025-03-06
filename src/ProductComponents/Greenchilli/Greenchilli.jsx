@@ -5,7 +5,7 @@ export const Greenchilli = () => {
   return (
     <div className={styles.container}>
       {/* Page Title */}
-      <h2 className={styles.heading}>Fresh Green Chilli</h2>
+      <h2 className={styles.heading}>Green Chilli</h2>
 
       {/* Image Section */}
       <div className={styles.imageContainer}>

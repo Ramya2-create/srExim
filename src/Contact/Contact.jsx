@@ -53,10 +53,6 @@ export const Contact = () => {
             <input type="text" placeholder="Enter phone number" required />
           </div>
 
-          <div className={styles.formGroup}>
-            <label>Fax Number</label>
-            <input type="text" placeholder="Enter fax number" />
-          </div>
 
           <div className={styles.formGroup}>
             <label>Message</label>

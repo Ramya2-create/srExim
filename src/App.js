@@ -3,7 +3,7 @@ import { Home } from "./Home";
 import { About } from "./About";
 import { Ourbusiness } from "./Ourbusiness";
 import { Product } from "./Products";
-import { Certification } from "./Certifications";
+
 import { Header } from "./Header";
 import { Menu } from "./Menu";
 import { Contact } from "./Contact";
@@ -13,6 +13,12 @@ import { Drumstic } from "./ProductComponents/Drumstics/Drumstic";
 import { Egg } from "./ProductComponents/Eggs/Egg";
 import { Greenchilli } from "./ProductComponents/Greenchilli/Greenchilli";
 import { Garlic } from "./ProductComponents/Garlic/Garlic";
+import { Ginger } from "./ProductComponents/Ginger/Ginger";
+import { Mirchi } from "./ProductComponents/Mirchi/Mirchi";
+import { Onion } from "./ProductComponents/Onion/Onion";
+import { Pumpkin } from "./ProductComponents/Pumpkin/Pumpkin";
+import { Spices } from "./ProductComponents/Spices/Spices";
+import { Rice } from "./ProductComponents/Rice/Rice";
 
 function App() {
   return (
@@ -31,7 +37,12 @@ function App() {
          <Route path="/products/eggs" element={<Egg/>}/>
          <Route path="/products/greenchilli" element={<Greenchilli/>}/>
          <Route path="/products/garlic" element={<Garlic/>}/>
-        <Route path="/certifications" element={<Certification />} />
+         <Route path="/products/ginger" element={<Ginger/>}/>
+         <Route path="/products/mirchi" element={<Mirchi/>}/>
+         <Route path="/products/onion" element={<Onion/>}/>
+         <Route path="/products/pumpkin" element={<Pumpkin/>}/>
+         <Route path="/products/spices" element={<Spices/>}/>
+         <Route path="/products/rice" element={<Rice/>}/>
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
