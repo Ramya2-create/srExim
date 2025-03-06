@@ -1,0 +1,57 @@
+/* Main container */
+.businessContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #f4f7f6;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styles */
+  .heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Subheading styles */
+  .subheading {
+    font-size: 1.5rem;
+    color: #004d40;
+    margin-top: 30px;
+    font-weight: 600;
+    border-left: 4px solid #004d40;
+    padding-left: 10px;
+  }
+  
+  /* Description text */
+  .description {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .businessContainer {
+      padding: 20px;
+    }
+  
+    .heading {
+      font-size: 1.8rem;
+    }
+  
+    .subheading {
+      font-size: 1.3rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  }
+  

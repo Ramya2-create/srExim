@@ -1,0 +1,28 @@
+.headContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    background-color: azure;
+
+  }
+  
+  .logoSection {
+    flex-shrink: 0; 
+  }
+  
+  .logo {
+    width: 150px; 
+    height: 150px;
+  }
+  
+ 
+.contentSection {
+  
+    text-align: center;
+    font-size: 30px;
+  }
+  .contentSection > h1,
+  .contentSection > p {
+    margin: 0px;
+  }

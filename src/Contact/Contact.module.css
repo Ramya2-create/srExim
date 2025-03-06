@@ -1,0 +1,142 @@
+/* Main Container */
+.contactContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+/* Form Section */
+.formSection {
+  flex: 1;
+  background: #001f3f;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  min-width: 300px;
+}
+
+.formSection h2 {
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  margin: 0px;
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  background: white;
+  color: #333;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 12px;
+  background: #ff8a00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.submitBtn:hover {
+  background: #da1b60;
+}
+
+/* Info Section */
+.infoSection {
+  flex: 1;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 300px;
+  font-size: 1.1rem; /* Increased font size for better readability */
+  line-height: 1.6; /* Improved line spacing */
+}
+
+.infoSection h2 {
+  text-align: center;
+  font-size: 1.5rem; /* Slightly larger heading */
+  color: #333;
+}
+
+.infoSection p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.infoSection a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.infoSection a:hover {
+  text-decoration: underline;
+}
+
+.map {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .formSection,
+  .infoSection {
+    width: 90%;
+    min-width: unset;
+  }
+
+  .map {
+    height: 200px;
+  }
+}
+
+/* Smaller screens */
+@media (max-width: 480px) {
+  .formSection,
+  .infoSection {
+    padding: 15px;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    padding: 8px;
+  }
+
+  .submitBtn {
+    padding: 10px;
+  }
+
+  .map {
+    height: 180px;
+  }
+}
