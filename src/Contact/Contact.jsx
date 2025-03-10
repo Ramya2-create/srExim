@@ -1,62 +1,176 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Contact.module.css";
 
 export const Contact = () => {
+  // Step 2: Initialize state to hold form data
+  const [formData, setFormData] = useState({
+    companyName: '',
+    Name: '',
+    EmailID: '',
+    Street: '',
+    City: '',
+    State: '',
+    Country: '',
+    ZipCode: '',
+    phoneNumber: '',
+    message: '',
+    to: 'shanmukhaciv@gmail.com',  // Your receiver email
+    subject: 'SRM Message'
+  });
+
+  // Handle input change for each field
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent the default form submission behavior
+
+    try {
+      const response = await fetch('http://localhost:2020/cont/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('Message sent successfully!');
+      } else {
+        alert('Failed to send message.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Error submitting form. Please try again later.');
+    }
+  };
+
   return (
     <div className={styles.contactContainer}>
       {/* Left Side - Registration Form */}
       <div className={styles.formSection}>
         <h2>Contact Us</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
             <label>Company Name *</label>
-            <input type="text" placeholder="Enter company name" required />
+            <input
+              type="text"
+              name="companyName"
+              placeholder="Enter company name"
+              value={formData.companyName}
+              onChange={handleChange}
+              required
+            />
           </div>
 
           <div className={styles.formGroup}>
             <label>Name *</label>
-            <input type="text" placeholder="Enter your name" required />
+            <input
+              type="text"
+              name="Name"
+              placeholder="Enter your name"
+              value={formData.Name}
+              onChange={handleChange}
+              required
+            />
           </div>
 
           <div className={styles.formGroup}>
             <label>Email ID *</label>
-            <input type="email" placeholder="Enter your email" required />
+            <input
+              type="email"
+              name="EmailID"
+              placeholder="Enter your email"
+              value={formData.EmailID}
+              onChange={handleChange}
+              required
+            />
           </div>
 
           <div className={styles.formGroup}>
             <label>Street</label>
-            <input type="text" placeholder="Enter street address" />
+            <input
+              type="text"
+              name="Street"
+              placeholder="Enter street address"
+              value={formData.Street}
+              onChange={handleChange}
+            />
           </div>
 
           <div className={styles.formGroup}>
             <label>City</label>
-            <input type="text" placeholder="Enter city" />
+            <input
+              type="text"
+              name="City"
+              placeholder="Enter city"
+              value={formData.City}
+              onChange={handleChange}
+            />
           </div>
 
           <div className={styles.formGroup}>
             <label>State *</label>
-            <input type="text" placeholder="Enter state" required />
+            <input
+              type="text"
+              name="State"
+              placeholder="Enter state"
+              value={formData.State}
+              onChange={handleChange}
+              required
+            />
           </div>
 
           <div className={styles.formGroup}>
             <label>Country</label>
-            <input type="text" placeholder="Enter country" />
+            <input
+              type="text"
+              name="Country"
+              placeholder="Enter country"
+              value={formData.Country}
+              onChange={handleChange}
+            />
           </div>
 
           <div className={styles.formGroup}>
             <label>Zip Code *</label>
-            <input type="text" placeholder="Enter zip code" required />
+            <input
+              type="text"
+              name="ZipCode"
+              placeholder="Enter zip code"
+              value={formData.ZipCode}
+              onChange={handleChange}
+              required
+            />
           </div>
 
           <div className={styles.formGroup}>
             <label>Phone Number *</label>
-            <input type="text" placeholder="Enter phone number" required />
+            <input
+              type="text"
+              name="phoneNumber"
+              placeholder="Enter phone number"
+              value={formData.phoneNumber}
+              onChange={handleChange}
+              required
+            />
           </div>
-
 
           <div className={styles.formGroup}>
             <label>Message</label>
-            <textarea placeholder="Your message" rows="4"></textarea>
+            <textarea
+              name="message"
+              placeholder="Your message"
+              rows="4"
+              value={formData.message}
+              onChange={handleChange}
+            ></textarea>
           </div>
 
           <button type="submit" className={styles.submitBtn}>Send Message</button>

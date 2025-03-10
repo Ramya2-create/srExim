@@ -12,7 +12,7 @@ export const Header = () => {
       <div className={styles.contentSection}>
   
         <h1>SR EXIM</h1>
-        <p>Connecting international Markets</p>
+        <p>Connecting  Global Market</p>
         
       </div>
     </div>

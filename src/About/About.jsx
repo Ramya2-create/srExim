@@ -6,7 +6,7 @@ export const About = () => {
     <div className={styles.aboutContainer}>
       <h2 className={styles.heading}>About Us</h2>
       <p>
-        We at <strong>SR EXIM Connecting international Markets</strong> have been
+        We at <strong>SR EXIM Connecting Global Market</strong> have been
         researching the steadily rising need for various types of food products in
         the market, and as a consequence, started to impart our expertise in the field.
         For a long time, we have provided a comprehensive range of food-based goods, including:
@@ -24,7 +24,7 @@ export const About = () => {
         We do, however, ensure that we test the procured batches on our end as well.
         Our affordable, high-quality products have helped us significantly advance our position in the market.
       </p>
-      <h3>Key Facts of SR EXIM Connecting international Markets:</h3>
+      <h3>Key Facts of SR EXIM Connecting  Global Market:</h3>
       <table className={styles.infoTable}>
         <tbody>
           <tr>
@@ -45,19 +45,19 @@ export const About = () => {
           </tr>
           <tr>
             <td><strong>No. of Employees</strong></td>
-            <td></td>
+            <td>5</td>
           </tr>
           <tr>
             <td><strong>Import Export Code</strong></td>
-            <td></td>
+            <td>AFJFS3810G</td>
           </tr>
           <tr>
             <td><strong>Banker</strong></td>
-            <td></td>
+            <td>INDUSIND  Bank</td>
           </tr>
           <tr>
             <td><strong>GST No.</strong></td>
-            <td></td>
+            <td>36AFJFS3810GIZO</td>
           </tr>
         </tbody>
       </table>

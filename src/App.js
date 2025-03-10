@@ -19,6 +19,7 @@ import { Onion } from "./ProductComponents/Onion/Onion";
 import { Pumpkin } from "./ProductComponents/Pumpkin/Pumpkin";
 import { Spices } from "./ProductComponents/Spices/Spices";
 import { Rice } from "./ProductComponents/Rice/Rice";
+import { Footer } from "./Footer/Footer";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
          <Route path="/products/rice" element={<Rice/>}/>
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
