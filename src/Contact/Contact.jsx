@@ -14,7 +14,7 @@ export const Contact = () => {
     ZipCode: '',
     phoneNumber: '',
     message: '',
-    to: 'shanmukhaciv@gmail.com',  // Your receiver email
+    to: 'shanmuk25a@gmail.com',  // Your receiver email
     subject: 'SRM Message'
   });
 

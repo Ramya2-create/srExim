@@ -5,7 +5,7 @@ export const Header = () => {
     <div className={styles.headContainer}>
       {/* Logo Section */}
       <div className={styles.logoSection}>
-        <img src="SREXIM.jpg" alt="Company Logo" className={styles.logo} />
+        <img src="EXIM 02.jpg" alt="Company Logo" className={styles.logo} />
       </div>
 
       {/* Content Section */}
